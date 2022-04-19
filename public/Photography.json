@@ -1,0 +1,61 @@
+[
+    {
+      "id": "1",
+      "category": "Data",
+      "name": "Photography of Narure",
+      "price": 600,
+      "ratings": 4,
+      "ratingsCount": 3725,
+      "img": "../src/components/Photos of photography/Wild-life photography1.jpg"
+    },
+    {
+        "id": "2",
+        "category": "Data",
+        "name": "Photography of Narure",
+        "price": 600,
+        "ratings": 4,
+        "ratingsCount": 3725,
+        "img": "../src/components/Photos of photography/Wild-life photography2.jpg"
+      },
+      {
+        "id": "3",
+        "category": "Data",
+        "name": "Photography of Narure",
+        "price": 600,
+        "ratings": 4,
+        "ratingsCount": 3725,
+        "img": "../src/components/Photos of photography/Wild-life photography3.jpg"
+      },
+      {
+        "id": "4",
+        "category": "Data",
+        "name": "Photography of Narure",
+        "price": 600,
+        "ratings": 4,
+        "ratingsCount": 3725,
+        "img": "../src/components/Photos of photography/Wild-life photography4.jpg"
+      },
+      {
+        "id": "",
+        "category": "Data",
+        "name": "Photography of Narure",
+        "price": 600,
+        "ratings": 4,
+        "ratingsCount": 3725,
+        "img": "../src/components/Photos of photography/Wild-life photography.jpg"
+      },
+      {
+        "id": "6",
+        "category": "Data",
+        "name": "Photography of Narure",
+        "price": 600,
+        "ratings": 4,
+        "ratingsCount": 3725,
+        "img": "../src/components/Photos of photography/Wild-life photography6.jpg"
+      }
+
+
+
+
+
+]
