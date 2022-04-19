@@ -6,7 +6,7 @@
       "price": 600,
       "ratings": 4,
       "ratingsCount": 3725,
-      "img": "../src/components/Photos of photography/Wild-life photography1.jpg"
+      "img": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
     },
     {
         "id": "2",
@@ -15,7 +15,7 @@
         "price": 600,
         "ratings": 4,
         "ratingsCount": 3725,
-        "img": "../src/components/Photos of photography/Wild-life photography2.jpg"
+        "img": "../src/images/Wild-life photography2.jpg"
       },
       {
         "id": "3",
@@ -24,7 +24,7 @@
         "price": 600,
         "ratings": 4,
         "ratingsCount": 3725,
-        "img": "../src/components/Photos of photography/Wild-life photography3.jpg"
+        "img": "../src/images/Wild-life photography3.jpg"
       },
       {
         "id": "4",
@@ -33,16 +33,16 @@
         "price": 600,
         "ratings": 4,
         "ratingsCount": 3725,
-        "img": "../src/components/Photos of photography/Wild-life photography4.jpg"
+        "img": "../src/images/Wild-life photography4.jpg"
       },
       {
-        "id": "",
+        "id": "5",
         "category": "Data",
         "name": "Photography of Narure",
         "price": 600,
         "ratings": 4,
         "ratingsCount": 3725,
-        "img": "../src/components/Photos of photography/Wild-life photography.jpg"
+        "img": "../src/images/Wild-life photography5.jpg"
       },
       {
         "id": "6",
@@ -51,11 +51,7 @@
         "price": 600,
         "ratings": 4,
         "ratingsCount": 3725,
-        "img": "../src/components/Photos of photography/Wild-life photography6.jpg"
+        "img": "../src/images/Wild-life photography6.jpg"
       }
-
-
-
-
 
 ]
