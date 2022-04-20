@@ -1,12 +1,11 @@
 import React from 'react';
 
 const WildPhotoSingle = ({ value }) => {
-    console.log(value);
     const { name, img } = value;
     return (
-        <div className="col-md-4">
+        <div className="col-md-4 g-md-4 my-2">
             <div className="card">
-                <h1>name :{name}</h1>
+                <h5 className='text-center'>{name}</h5>
                 <div className="card">
                     <img src={img} className="card-img-top" alt="..." />
                     <div className="card-body">

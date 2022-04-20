@@ -12,8 +12,7 @@ const Home = () => {
         .then(data=>setValues(data))
     },[])
     return (
-        <div>
-                   <h2>length; {values.length}</h2>
+        <div className='row container mx-auto'>
             {
                 values.map(value=><WildPhotoSingle
                     key={value.id}

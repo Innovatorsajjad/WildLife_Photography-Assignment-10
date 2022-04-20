@@ -2,56 +2,57 @@
     {
       "id": "1",
       "category": "Data",
-      "name": "Photography of Narure",
+      "name": "Climbing up of a tree",
       "price": 600,
       "ratings": 4,
       "ratingsCount": 3725,
-      "img": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+      "img": "https://i.ibb.co/pW1yrHr/Wild-life-photography2.webp"
     },
+    
     {
         "id": "2",
         "category": "Data",
-        "name": "Photography of Narure",
+        "name": "Zebra on Africa",
         "price": 600,
         "ratings": 4,
         "ratingsCount": 3725,
-        "img": "../src/images/Wild-life photography2.jpg"
+        "img": "https://i.ibb.co/0jJmrdK/Wild-life-photography6.webp"
       },
       {
         "id": "3",
         "category": "Data",
-        "name": "Photography of Narure",
+        "name": "Wild Life Photographer",
         "price": 600,
         "ratings": 4,
         "ratingsCount": 3725,
-        "img": "../src/images/Wild-life photography3.jpg"
+        "img": "https://i.ibb.co/7CcN4HY/Wild-life-photography1.jpg"
       },
       {
         "id": "4",
         "category": "Data",
-        "name": "Photography of Narure",
+        "name": "Beautiful Bird",
         "price": 600,
         "ratings": 4,
         "ratingsCount": 3725,
-        "img": "../src/images/Wild-life photography4.jpg"
+        "img": "https://i.ibb.co/nbW2YS2/Wild-life-photography5-1.jpg"
       },
       {
         "id": "5",
         "category": "Data",
-        "name": "Photography of Narure",
+        "name": "Tiger Climbing on tree",
         "price": 600,
         "ratings": 4,
         "ratingsCount": 3725,
-        "img": "../src/images/Wild-life photography5.jpg"
+        "img": "https://i.ibb.co/q1CQDj9/Wild-life-photography3-1.jpg"
       },
       {
         "id": "6",
         "category": "Data",
-        "name": "Photography of Narure",
+        "name": "Cartoon Pic",
         "price": 600,
         "ratings": 4,
         "ratingsCount": 3725,
-        "img": "../src/images/Wild-life photography6.jpg"
+        "img": "https://i.ibb.co/VpXBwPd/Wild-life-photography4-1.jpg"
       }
 
 ]
