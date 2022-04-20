@@ -1,7 +1,9 @@
 import React from 'react';
+import Slider from '../Slider/Slider';
 
 const WildPhotoSingle = ({ value }) => {
-    const { name, img } = value;
+    const { name, img,price} = value;
+    <Slider/>
     return (
         <div className="col-md-4 g-md-4 my-2">
             <div className="card">
@@ -9,7 +11,7 @@ const WildPhotoSingle = ({ value }) => {
                 <div className="card">
                     <img src={img} className="card-img-top" alt="..." />
                     <div className="card-body">
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p className="card-text">Price Of a day : ${price}</p>
                     </div>
                 </div>
             </div>

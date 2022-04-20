@@ -3,7 +3,7 @@
       "id": "1",
       "category": "Data",
       "name": "Climbing up of a tree",
-      "price": 600,
+      "price": 700,
       "ratings": 4,
       "ratingsCount": 3725,
       "img": "https://i.ibb.co/pW1yrHr/Wild-life-photography2.webp"
@@ -13,7 +13,7 @@
         "id": "2",
         "category": "Data",
         "name": "Zebra on Africa",
-        "price": 600,
+        "price": 250,
         "ratings": 4,
         "ratingsCount": 3725,
         "img": "https://i.ibb.co/0jJmrdK/Wild-life-photography6.webp"
@@ -22,7 +22,7 @@
         "id": "3",
         "category": "Data",
         "name": "Wild Life Photographer",
-        "price": 600,
+        "price": 650,
         "ratings": 4,
         "ratingsCount": 3725,
         "img": "https://i.ibb.co/7CcN4HY/Wild-life-photography1.jpg"
@@ -31,7 +31,7 @@
         "id": "4",
         "category": "Data",
         "name": "Beautiful Bird",
-        "price": 600,
+        "price": 400,
         "ratings": 4,
         "ratingsCount": 3725,
         "img": "https://i.ibb.co/nbW2YS2/Wild-life-photography5-1.jpg"
@@ -39,8 +39,8 @@
       {
         "id": "5",
         "category": "Data",
-        "name": "Tiger Climbing on tree",
-        "price": 600,
+        "name": "Sleeping pet",
+        "price": 630,
         "ratings": 4,
         "ratingsCount": 3725,
         "img": "https://i.ibb.co/q1CQDj9/Wild-life-photography3-1.jpg"
@@ -49,7 +49,7 @@
         "id": "6",
         "category": "Data",
         "name": "Cartoon Pic",
-        "price": 600,
+        "price": 300,
         "ratings": 4,
         "ratingsCount": 3725,
         "img": "https://i.ibb.co/VpXBwPd/Wild-life-photography4-1.jpg"
