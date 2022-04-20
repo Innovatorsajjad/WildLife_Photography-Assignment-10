@@ -15,6 +15,7 @@ const Home = () => {
     return (
         <div className='row container mx-auto'>
             <Slider/>
+            <h2 className='text-info text-center mb-3'>..... SERVICES .....</h2>
             {
                 values.map(value=><WildPhotoSingle
                     key={value.id}

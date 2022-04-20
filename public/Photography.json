@@ -6,7 +6,8 @@
       "price": 700,
       "ratings": 4,
       "ratingsCount": 3725,
-      "img": "https://i.ibb.co/pW1yrHr/Wild-life-photography2.webp"
+      "img": "https://i.ibb.co/pW1yrHr/Wild-life-photography2.webp",
+      "shortDescription":"This Photography was needed form tree ..."
     },
     
     {
@@ -16,7 +17,8 @@
         "price": 250,
         "ratings": 4,
         "ratingsCount": 3725,
-        "img": "https://i.ibb.co/0jJmrdK/Wild-life-photography6.webp"
+        "img": "https://i.ibb.co/0jJmrdK/Wild-life-photography6.webp",
+        "shortDescription":"This Photography was needed from Africa ..."
       },
       {
         "id": "3",
@@ -25,7 +27,8 @@
         "price": 650,
         "ratings": 4,
         "ratingsCount": 3725,
-        "img": "https://i.ibb.co/7CcN4HY/Wild-life-photography1.jpg"
+        "img": "https://i.ibb.co/7CcN4HY/Wild-life-photography1.jpg",
+        "shortDescription":"This Photography is for a photographer ..."
       },
       {
         "id": "4",
@@ -34,7 +37,8 @@
         "price": 400,
         "ratings": 4,
         "ratingsCount": 3725,
-        "img": "https://i.ibb.co/nbW2YS2/Wild-life-photography5-1.jpg"
+        "img": "https://i.ibb.co/nbW2YS2/Wild-life-photography5-1.jpg",
+        "shortDescription":"This Photography was need of a Bird"
       },
       {
         "id": "5",
@@ -43,7 +47,8 @@
         "price": 630,
         "ratings": 4,
         "ratingsCount": 3725,
-        "img": "https://i.ibb.co/q1CQDj9/Wild-life-photography3-1.jpg"
+        "img": "https://i.ibb.co/q1CQDj9/Wild-life-photography3-1.jpg",
+        "shortDescription":"This Photography was needed form tree ..."
       },
       {
         "id": "6",
@@ -52,7 +57,8 @@
         "price": 300,
         "ratings": 4,
         "ratingsCount": 3725,
-        "img": "https://i.ibb.co/VpXBwPd/Wild-life-photography4-1.jpg"
+        "img": "https://i.ibb.co/VpXBwPd/Wild-life-photography4-1.jpg",
+        "shortDescription":"This Photography was Design of a cartoon..."
       }
 
 ]
