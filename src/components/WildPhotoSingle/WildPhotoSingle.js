@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Slider from '../Slider/Slider';
 
 const WildPhotoSingle = ({ value }) => {
@@ -12,7 +13,8 @@ const WildPhotoSingle = ({ value }) => {
                     <img src={img} className="card-img-top" alt="..." />
                     <div className="card-body">
                         <h5 className="card-text">Price Of a day : ${price}</h5>
-                        <p>Short Description :{shortDescription}</p>
+                        <p>Short Description :{shortDescription}</p> 
+                        <button type="button" as={Link}  to="/login" class="btn btn-primary">More info</button>
                     </div>
                 </div>
             </div>
