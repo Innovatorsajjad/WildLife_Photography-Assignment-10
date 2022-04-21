@@ -1,0 +1,10 @@
+.single_Option{
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+}
+.single_Option img {
+    width: 50px;
+}
