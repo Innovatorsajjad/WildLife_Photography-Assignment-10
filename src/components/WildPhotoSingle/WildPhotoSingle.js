@@ -14,7 +14,7 @@ const WildPhotoSingle = ({ value }) => {
                     <div className="card-body">
                         <h5 className="card-text">Price Of a day : ${price}</h5>
                         <p>Short Description :{shortDescription}</p> 
-                        <button type="button" as={Link}  to="/login" class="btn btn-primary">More info</button>
+                        <Link type="button" as={Link}  to="/cheakout" class="btn btn-primary">More info</Link>
                     </div>
                 </div>
             </div>
