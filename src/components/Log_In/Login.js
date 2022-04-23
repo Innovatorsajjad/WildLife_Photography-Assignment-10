@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import "./Login.css"
+import auth from "../../firebase.init"
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 
 const Login = () => {
 
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [emailError, setEmailError] = useState("")
-    const [passwordError , setPasswordError]=useState("")
+    const [passwordError, setPasswordError] = useState("")
 
 
 
@@ -20,7 +22,7 @@ const Login = () => {
         const validLogin = loginRegex.test(event.target.value)
 
         if (validLogin) {
-
+            setEmailError("")
             setEmail(event.target.value)
         } else {
             setEmailError("Set the valid Email")
@@ -34,27 +36,45 @@ const Login = () => {
     //password form handling....
 
     const handlePassword = (event) => {
-        const passwordRegex = /.{6,}/ ;
+        const passwordRegex = /.{6,}/;
         const validPassword = passwordRegex.test(event.target.value)
-        
-        if(validPassword){
+
+        if (validPassword) {
+            setPasswordError("")
             setPassword(event.target.value)
-        }else{
+        } else {
             setPasswordError("Wrong Password !!!")
         }
-        
+
     }
 
 
-    console.log(email, password);
+    //  Using Hooks 
+    const [
+        signInWithEmailAndPassword,
+        user,
+        loading,
+        hookError
+    ] = useSignInWithEmailAndPassword(auth)
+
+    const handleLogin = (event) => {
+        event.preventDefault()
+        signInWithEmailAndPassword(email, password)
+    }
+    const navigate = useNavigate();
+    useEffect(() => {
+        if (user) {
+            navigate("/about_me")
+        }
 
 
+    }, [user])
 
 
 
     return (
         <div className='container mt-5'>
-            <form className=' Full_form w-50 mx-auto mt-5 border p-3 rounded shadow-sm p-3 mb-5 bg-body'>
+            <form onSubmit={handleLogin} className=' Full_form w-50 mx-auto mt-5 border p-3 rounded shadow-sm p-3 mb-5 bg-body'>
                 <h1 className='text-center'>Please Login !!!</h1>
                 <div className="mb-3">
                     <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>

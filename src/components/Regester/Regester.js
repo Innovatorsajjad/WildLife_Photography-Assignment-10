@@ -39,7 +39,7 @@ const Regester = () => {
     const handlePassChange=(event)=>{
         const passwordRegex =/.{6,}/ ;
         const validPassword = passwordRegex.test(event.target.value)
-        console.log(validPassword);
+        
         if (validPassword){
             setPasswordError("")
             setPassword(event.target.value)
