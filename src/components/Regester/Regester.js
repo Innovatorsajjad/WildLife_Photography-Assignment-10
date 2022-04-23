@@ -76,8 +76,10 @@ const Regester = () => {
 
  const handleRegester =(event)=>{
     event.preventDefault();
+   createUserWithEmailAndPassword(email,password);
+
  }
-    
+
 
 
 
