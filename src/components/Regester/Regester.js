@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import "./Regester.css"
 import { BsFacebook , BsGithub , BsGoogle} from "react-icons/bs";
 import { Link } from 'react-router-dom';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
 
 
 const Regester = () => {
@@ -64,10 +66,17 @@ const Regester = () => {
     }
    
 
-console.log(email,password,confirmPassword);
+    const [
+        createUserWithEmailAndPassword ,
+        user, 
+        loading,
+        hookError
+    ]=useCreateUserWithEmailAndPassword(auth);
 
 
-
+ const handleRegester =(event)=>{
+    event.preventDefault();
+ }
     
 
 
@@ -79,7 +88,7 @@ console.log(email,password,confirmPassword);
     return (
         <div className="full_div">
                     <div className='container mt-5'>
-            <form className=' Full_form w-50 mx-auto mt-5 border p-3 rounded shadow-sm p-3 mb-5 bg-body'>
+            <form onSubmit={handleRegester} className=' Full_form w-50 mx-auto mt-5 border p-3 rounded shadow-sm p-3 mb-5 bg-body'>
                 <h1 className='text-center'>Please Regester !!!</h1>
                 <div className="mb-3">
                     <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
@@ -102,7 +111,7 @@ console.log(email,password,confirmPassword);
                     <input type="checkbox" className="form-check-input" id="exampleCheck1" />
                     <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
                 </div>
-                <button type="submit" className="btn btn-primary">Submit</button>
+                <button  type="submit" className="btn btn-primary">Submit</button>
             </form>
         </div>
 
