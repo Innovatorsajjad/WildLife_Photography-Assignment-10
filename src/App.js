@@ -10,6 +10,7 @@ import Regester from './components/Regester/Regester';
 import NotFound from './components/NotFound/NotFound';
 import RequreAuth from './components/Auth/RequreAuth';
 
+
 function App() {
   return (
     <div>
@@ -21,9 +22,11 @@ function App() {
         <Route path='/about_me' element={<AboutMe/>}></Route>
         <Route path='/regester' element={<Regester/>}></Route>
         <Route path='/cheakout' element={
+
           <RequreAuth>
             <CheakOut/>
           </RequreAuth>
+          
         }></Route>
         <Route path='*' element={<NotFound/>}></Route>
 
