@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import "./Login.css"
 import auth from "../../firebase.init"
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
@@ -62,9 +62,12 @@ const Login = () => {
         signInWithEmailAndPassword(email, password)
     }
     const navigate = useNavigate();
+    const location =useLocation();
+    // let from = location.state?.from?.pathname || "/"; 
+    const from = location?.state?.from?.pathname || "/";
     useEffect(() => {
         if (user) {
-            navigate("/about_me")
+            navigate(from)
         }
 
 
