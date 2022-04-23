@@ -8,21 +8,58 @@ const Regester = () => {
     const [email , setEmail]=useState("")
     const [password , setPassword]=useState("")
     const [confirmPassword , setConfirmPassword]=useState("")
+    const [error,setError]=useState('')
+    const [passwordError , setPasswordError]=useState("")
+    const [confirmPassError , setConfirmPassError]=useState("")
 
+
+        //  Email validation
+    
     const handleEmailChange =(event)=>{
-    setEmail(event.target.value)
+        const emailRegex = /\S+@\S+\.\S+/;
+        const validEmail = emailRegex.test (event.target.value);
         
-    }
-
-
+        if(validEmail){
+            setError("")
+             setEmail(event.target.value)
+        }
    
-    const handlePassChange=(event)=>{
-        setPassword(event.target.value)
-        
-    }
+        else{  
+            setError("invalid Email or Password")
+        };
+    };
+    
 
+        //  Password Validation
+
+
+        
+    const handlePassChange=(event)=>{
+        const passwordRegex =/.{6,}/ ;
+        const validPassword = passwordRegex.test(event.target.value)
+        console.log(validPassword);
+        if (validPassword){
+            setPasswordError("")
+            setPassword(event.target.value)
+        }else{
+            setPasswordError ("Your password is Invalid")
+            
+
+        };
+         
+
+    };
+
+                 // Confirm Password 
+   
     const handleConfirmPassChange=(event)=>{
-        setConfirmPassword(event.target.value)
+        if (password === event.target.value ){
+            setConfirmPassError('')
+            setConfirmPassword(event.target.value)
+        }else{
+            setConfirmPassError("Not Match , Try again !!!")
+        }
+        
         
     }
    
@@ -49,14 +86,17 @@ console.log(email,password,confirmPassword);
                     <input onChange={handleEmailChange} type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                     <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
                 </div>
+                <p className='text-danger'>{error}</p>
                 <div className="mb-3">
                     <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
                     <input onChange={handlePassChange} type="password" className="form-control" id="exampleInputPassword1" />
                 </div>
+                <p className='text-danger'>{passwordError}</p>
                 <div className="mb-3">
                     <label htmlFor="exampleInputPassword1" className="form-label">Confirm Password</label>
                     <input  onChange={handleConfirmPassChange} type="password" className="form-control" id="exampleInputPassword2" />
                 </div>
+                <p className='text-danger'>{confirmPassError}</p>
                  <p>Already have an account ? <Link className='text-center' as={Link} to="/login">Login</Link></p>
                 <div className="mb-3 form-check">
                     <input type="checkbox" className="form-check-input" id="exampleCheck1" />
