@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import "./Login.css"
 import auth from "../../firebase.init"
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { BsFacebook, BsGithub, BsGoogle } from "react-icons/bs";
+import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 
 const Login = () => {
 
@@ -10,7 +11,7 @@ const Login = () => {
     const [password, setPassword] = useState("")
     const [emailError, setEmailError] = useState("")
     const [passwordError, setPasswordError] = useState("")
-
+    const [signInWithGoogle, googleUser, googleLoad] = useSignInWithGoogle(auth)
 
 
 
@@ -72,7 +73,9 @@ const Login = () => {
 
 
     }, [user])
+   
 
+    
 
 
     return (
@@ -93,6 +96,34 @@ const Login = () => {
                 <p className='text-danger'>{passwordError}</p>
                 <button type="submit" className="btn btn-primary">Login</button>
             </form>
+
+
+
+
+                     {/* Google/Facebook/Github all are here */}
+
+
+
+            <div className="website_login row container w-50 mx-auto pointer pb-5">
+                <div className="col-md-4 mt-3 p-1">
+                    <button className="github_login single_Option border shadow-lg rounded d-flex align-items-center justify-content-center ">
+                        <BsGithub className='m-2 fs-4 ' />
+                        <h3 className='text-dark'>Github</h3>
+                    </button>
+                </div>
+                <div className="col-md-4 mt-3 p-1">
+                    <button className="github_login single_Option shadow-lg rounded  border d-flex align-items-center justify-content-center ">
+                        <BsFacebook className='text-info m-2 fs-4 ' />
+                        <h3 className='text-dark'>Facebook</h3>
+                    </button>
+                </div>
+                <div className="col-md-4 mt-3 p-1">
+                    <button onClick={() => signInWithGoogle()} className="github_login single_Option border shadow-lg rounded d-flex align-items-center justify-content-center ">
+                        <BsGoogle className='m-2 fs-4  text-success' />
+                        <h3 className='text-dark'>Google</h3>
+                    </button>
+                </div>
+            </div>
         </div>
     );
 };
