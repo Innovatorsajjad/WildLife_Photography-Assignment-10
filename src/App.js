@@ -9,6 +9,7 @@ import CheakOut from './components/CheakOut/CheakOut';
 import Regester from './components/Regester/Regester';
 import NotFound from './components/NotFound/NotFound';
 import RequreAuth from './components/Auth/RequreAuth';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
 
         
       </Routes>
-       
+       <Footer/>
       
     </div>
   );

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "./Regester.css"
 import { BsFacebook , BsGithub , BsGoogle} from "react-icons/bs";
 import { Link } from 'react-router-dom';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 
 
@@ -13,6 +13,7 @@ const Regester = () => {
     const [error,setError]=useState('')
     const [passwordError , setPasswordError]=useState("")
     const [confirmPassError , setConfirmPassError]=useState("")
+    const [signInWithGoogle,googleUser,googleLoad]=useSignInWithGoogle(auth)
 
 
         //  Email validation
@@ -125,22 +126,22 @@ const Regester = () => {
         
         <div className="website_login row container w-50 mx-auto pointer pb-5">
             <div className="col-md-4 mt-3 p-1">
-                <div className="github_login single_Option border shadow-lg rounded d-flex align-items-center justify-content-center ">
+                <button className="github_login single_Option border shadow-lg rounded d-flex align-items-center justify-content-center ">
                   <BsGithub className='m-2 fs-4 '/>
                 <h3 className='text-dark'>Github</h3>
-                </div>
+                </button>
             </div>
             <div className="col-md-4 mt-3 p-1">
-                <div className="github_login single_Option shadow-lg rounded  border d-flex align-items-center justify-content-center ">
+                <button className="github_login single_Option shadow-lg rounded  border d-flex align-items-center justify-content-center ">
                 <BsFacebook className='text-info m-2 fs-4 '/>
                 <h3 className='text-dark'>Facebook</h3>
-                </div>
+                </button>
             </div>
             <div className="col-md-4 mt-3 p-1">
-                <div className="github_login single_Option border shadow-lg rounded d-flex align-items-center justify-content-center ">
+                <button onClick={()=>signInWithGoogle()} className="github_login single_Option border shadow-lg rounded d-flex align-items-center justify-content-center ">
                <BsGoogle className='m-2 fs-4  text-success'/>
                 <h3 className='text-dark'>Google</h3>
-                </div>
+                </button>
             </div>
         </div>
         </div>
