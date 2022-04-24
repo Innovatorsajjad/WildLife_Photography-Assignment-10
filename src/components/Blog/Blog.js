@@ -3,6 +3,7 @@ import React from 'react';
 const Blog = () => {
     return (
         <div className='w-50 mx-auto shadow-sm mb-5 bg-body container'>
+          <h1 className='mt-3 fw-bold text-center text-info '>You Need to know !</h1>
             <div className="accordion accordion-flush container mt-5 border p-3" id="accordionFlushExample">
   <div className="accordion-item">
     <h2 className="accordion-header" id="flush-headingOne">
