@@ -23,7 +23,7 @@ const Header = () => {
         <Nav.Link as={Link} to="/">Home</Nav.Link>
         <Nav.Link as={Link} to="/about_me">About-Me</Nav.Link>
         <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
-       { user? <button onClick={handleSignOut}>Sign out</button>: <button as={Link} to="/regester">Regester</button>}
+       { user? <button className='btn-link text-decoration-none' onClick={handleSignOut}>Sign out</button>: <Nav.Link as={Link} to="/regester">Regester</Nav.Link>}
         {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
           <NavDropdown.Item as={Link} to="#action/3.1">Action</NavDropdown.Item>
           <NavDropdown.Item as={Link} to="#action/3.2">Another action</NavDropdown.Item>
