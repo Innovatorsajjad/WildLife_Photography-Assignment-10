@@ -1,0 +1,11 @@
+.footer_section{
+    position: relative;
+    ;
+}
+.peragraph_text {
+    background-color: black;
+    height: 143px;
+    color: white;
+    position: absolute;
+    width: 100%;
+}
